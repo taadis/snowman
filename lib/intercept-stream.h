@@ -3,6 +3,7 @@
 #include <frame-info.h>
 #include <stream-itf.h>
 #include <vector>
+#include <matrix-wrapper.h>
 
 namespace snowboy {
 	class InterceptStream : public StreamItf {
