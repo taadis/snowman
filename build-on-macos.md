@@ -24,7 +24,7 @@ brew install googletest
 ## 3.配置和构建项目
 
 ```zsh
-cd /Users/taadis/roujia/snowman
+# 创建独立构建目录,不然直接执行cmake会在项目目录下生成很多文件
 mkdir build
 cd build
 
@@ -52,4 +52,21 @@ ls -la enroll cut detect-live enroll-live 2>/dev/null || echo "应用程序可�
 ```zsh
 # 运行单元测试
 ./test/snowboy-test
+```
+
+## cmake 常见工作流程
+
+以下是一个典型的使用 CMake 构建项目的流程：
+
+> 构建目录：建议使用独立的构建目录（如 `build/`），避免污染源代码目录.
+
+```
+# 1.创建构建目录:
+mkdir build && cd build
+2.配置项目:
+cmake -S .. -B . -DCMAKE_BUILD_TYPE=Release
+3.构建项目:
+cmake --build .
+3.安装（可选）:
+cmake --install .
 ```
