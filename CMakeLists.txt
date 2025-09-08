@@ -18,9 +18,9 @@ option(SNOWMAN_BUILD_WASM "Build wasm version of the library" OFF)
 option(SNOWMAN_BUILD_SHARED "Build library as a shared library instead of a static library" OFF)
 # According to steam ~99.17% of users have at least ssse3
 # and 100% have SSE, SSE2 and SSE3, so this is on by default
-option(SNOWMAN_BUILD_WITH_SSE3 "Enable sse3 optimizations" ON)
+option(SNOWMAN_BUILD_WITH_SSE3 "Enable sse3 optimizations" OFF)
 # ~98.3%, so this is on by default as well
-option(SNOWMAN_BUILD_WITH_SSE4 "Enable sse4 optimizations" ON)
+option(SNOWMAN_BUILD_WITH_SSE4 "Enable sse4 optimizations" OFF)
 # ~94.7%
 option(SNOWMAN_BUILD_WITH_AVX "Enable avx optimizations" OFF)
 # ~82%
